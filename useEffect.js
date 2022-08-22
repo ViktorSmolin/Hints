@@ -33,3 +33,23 @@
         </>
     )
  }
+
+// componetDidMount
+useEffect(() =>{
+  console.log('компонент отобразился')
+},[])
+// componetDidUpdate
+useEffect(() => {
+ console.log('компонент обновилcя')
+})
+
+useEffect(() => {
+ console.log('обновился определённый элемент или переменная')
+},['переменная'])
+
+// componetnWillMout
+
+useEffect(() =>{
+  console.log('компонент отобразился')
+  return () => {}
+},[])
